@@ -9,6 +9,7 @@ for (var i = 0; i < menus_item_child.length; i++) {
 }
 
 
+/*分类卡片隐藏*/
 var card_category_list = document.getElementsByClassName(
     "card-category-list child"
 );
@@ -30,4 +31,15 @@ for (var i = 0; i < card_category_list.length; i++) {
     card_category_list[i].style.transition = "all 1s";
     card_category_list[i].previousSibling.innerHTML +=
         '<i class="fa fa-chevron-up menus-expand  menus-closed" aria-hidden="true" style="margin-left:20px;" onclick="toggle(this)"></i>';
+}
+
+/*手机侧边栏默认不展开*/
+var mobile_sidebar_menus = document.getElementById("mobile-sidebar-menus");
+var menus_item_child = mobile_sidebar_menus.getElementsByClassName(
+    "menus_item_child"
+);
+var menus_expand = mobile_sidebar_menus.getElementsByClassName("menus-expand");
+for (var i = 0; i < menus_item_child.length; i++) {
+    menus_item_child[i].style.display = "none";
+    menus_expand[i].className += " menus-closed";
 }
