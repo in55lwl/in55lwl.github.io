@@ -235,3 +235,8 @@ span:first-child {
     width: auto;
     min-width: 50%;
 }
+
+/*外部字体*/
+@font-face { font-family:MyFont;
+src: url(https:xxx)}
+body{font-family:MyFont!important;}

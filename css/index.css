@@ -18,7 +18,7 @@ body {
   height: 8px;
 }
 *::-webkit-scrollbar-thumb {
-  background: #49b1f5;
+  background: #9fefaf;
 }
 *::-webkit-scrollbar-track {
   background-color: transparent;
@@ -77,7 +77,7 @@ hr {
   position: relative;
   margin: 2rem auto;
   width: calc(100% - 4px);
-  border: 2px dashed #a4d8fa;
+  border: 2px dashed #d2ebfd;
 }
 hr:hover:before {
   left: calc(95% - 20px);
@@ -87,7 +87,7 @@ hr:before {
   top: -10px;
   left: 5%;
   z-index: 1;
-  color: #49b1f5;
+  color: #a4d8fa;
   content: '\f0c4';
   font-style: normal;
   font-variant: normal;
@@ -365,6 +365,27 @@ canvas:not(#ribbon-canvas),
   -o-animation: tocsidebarRtoL 0.7s;
   -ms-animation: tocsidebarRtoL 0.7s;
   animation: tocsidebarRtoL 0.7s;
+}
+.button--animated {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -ms-transition-property: color;
+  transition-property: color;
+}
+.button--animated:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
 }
 @-moz-keyframes scroll-down-effect {
   0% {
@@ -1475,8 +1496,8 @@ figure.highlight {
 blockquote {
   margin: 0 0 1rem;
   padding: 0.1rem 0.8rem;
-  border-left: 0.2rem solid #49b1f5;
-  background-color: rgba(73,177,245,0.1);
+  border-left: 0.2rem solid #9fefaf;
+  background-color: rgba(159,239,175,0.1);
   color: #6a737d;
 }
 blockquote a {
@@ -1911,7 +1932,7 @@ blockquote footer cite:before {
   position: relative;
   z-index: 1;
   display: block;
-  background-color: #49b1f5;
+  background-color: #9fefaf;
   color: #fff;
   line-height: 1.6rem;
 }
@@ -1932,7 +1953,7 @@ blockquote footer cite:before {
   padding: 0 0.1rem;
 }
 #aside_content .card-tag-cloud a:hover {
-  color: #49b1f5 !important;
+  color: #9fefaf !important;
 }
 #aside_content .card-recent-post .aside-recent-item {
   margin: 10px 0 -15px;
@@ -1985,7 +2006,7 @@ blockquote footer cite:before {
   -webkit-box-orient: vertical;
 }
 #aside_content .card-recent-post .aside-recent-item > .aside-recent-post > a .aside-post-title .aside-post_title:hover {
-  color: #49b1f5 !important;
+  color: #9fefaf !important;
 }
 #aside_content .card-recent-post .aside-recent-item > .aside-recent-post > a .aside-post-title.no-aside-cover .aside-post_title {
   height: auto;
@@ -2009,7 +2030,7 @@ blockquote footer cite:before {
 #aside_content .card-archives ul.card-archive-list > .card-archive-list-item:hover,
 #aside_content .card-categories ul.card-category-list > .card-category-list-item:hover {
   padding: 0.15rem 0.85rem;
-  background-color: #49b1f5;
+  background-color: #9fefaf;
 }
 #aside_content .card-archives ul.card-archive-list > .card-archive-list-item a,
 #aside_content .card-categories ul.card-category-list > .card-category-list-item a {
@@ -2086,6 +2107,16 @@ blockquote footer cite:before {
     margin-left: 15px;
   }
 }
+#bookmark-it {
+  position: relative;
+  z-index: 1;
+  display: block;
+  background-color: #9fefaf;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.6rem;
+  border-radius: 5px;
+}
 .category-content ol,
 .category-content ul {
   margin-top: 0.4rem;
@@ -2122,7 +2153,7 @@ blockquote footer cite:before {
   position: absolute;
   top: 0;
   left: 0;
-  background: #49b1f5;
+  background: #9fefaf;
   color: #fff;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-out;
@@ -2150,7 +2181,7 @@ blockquote footer cite:before {
   margin-left: 0.45rem;
   width: 0.3rem;
   height: 0.3rem;
-  border: 0.15rem solid #49b1f5;
+  border: 0.15rem solid #9fefaf;
   border-radius: 0.3rem;
   background: transparent;
   content: '';
@@ -2192,7 +2223,7 @@ blockquote footer cite:before {
   bottom: 0;
   left: 0;
   z-index: -1;
-  background: #49b1f5;
+  background: #9fefaf;
   content: '';
   -webkit-transition-timing-function: ease-out;
   -moz-transition-timing-function: ease-out;
@@ -2274,7 +2305,7 @@ blockquote footer cite:before {
 }
 #footer {
   position: relative;
-  background: #49b1f5;
+  background: #9fefaf;
   background-attachment: local;
   background-position: bottom;
   -webkit-background-size: cover;
@@ -2292,7 +2323,7 @@ blockquote footer cite:before {
   cursor: pointer;
 }
 #footer-wrap a:hover {
-  color: #49b1f5;
+  color: #9fefaf;
   text-decoration: underline;
 }
 #footer-wrap .footer-separator {
@@ -2305,7 +2336,7 @@ blockquote footer cite:before {
 #nav {
   position: relative;
   width: 100%;
-  background-color: #49b1f5;
+  background-color: #9fefaf;
   background-attachment: local;
   background-position: center center;
   -webkit-background-size: cover;
@@ -2434,7 +2465,7 @@ blockquote footer cite:before {
   transition: all 0.3s ease-out;
 }
 #nav.post-bg #post-info #post-meta a:hover {
-  color: #49b1f5;
+  color: #9fefaf;
   text-decoration: underline;
 }
 #page-header {
@@ -2497,7 +2528,7 @@ blockquote footer cite:before {
 #page-header.fixed a:hover,
 #page-header.fixed #site-name:hover,
 #page-header.fixed .toggle-menu:hover {
-  color: #49b1f5;
+  color: #9fefaf;
 }
 #page-header.visible {
   -webkit-transition: all 0.5s;
@@ -2557,7 +2588,7 @@ blockquote footer cite:before {
   z-index: -1;
   width: 0;
   height: 3px;
-  background-color: #80c8f8;
+  background-color: #bcf4c7;
   content: '';
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -2596,7 +2627,7 @@ blockquote footer cite:before {
   list-style: none;
 }
 #page-header .menus_items .menus_item .menus_item_child li:hover {
-  background: #49b1f5;
+  background: #9fefaf;
 }
 #page-header .menus_items .menus_item .menus_item_child li a {
   display: inline-block;
@@ -2761,7 +2792,7 @@ blockquote footer cite:before {
   width: 70%;
 }
 #mobile-sidebar #mobile-sidebar-menus .menus_items span:hover {
-  color: #49b1f5;
+  color: #9fefaf;
 }
 #mobile-sidebar #mobile-sidebar-menus .menus_items .menus-expand {
   position: absolute;
@@ -2928,7 +2959,7 @@ blockquote footer cite:before {
   -webkit-line-clamp: 2;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-title:hover {
-  color: #49b1f5 !important;
+  color: #9fefaf !important;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap {
   font-size: 95%;
@@ -2959,7 +2990,7 @@ blockquote footer cite:before {
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a.article-meta__categories:hover,
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a.article-meta__tags:hover {
-  color: #49b1f5 !important;
+  color: #9fefaf !important;
   text-decoration: underline;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .content {
@@ -3019,7 +3050,7 @@ blockquote footer cite:before {
 .article-sort {
   margin-left: 0.5rem;
   padding-left: 1rem;
-  border-left: 2px solid #aadafa;
+  border-left: 2px solid #f6fef8;
 }
 .article-sort-title {
   position: relative;
@@ -3039,7 +3070,7 @@ blockquote footer cite:before {
   z-index: 1;
   width: 0.5rem;
   height: 0.5rem;
-  border: 0.25rem solid #49b1f5;
+  border: 0.25rem solid #9fefaf;
   border-radius: 0.5rem;
   background: #fff;
   content: '';
@@ -3057,7 +3088,7 @@ blockquote footer cite:before {
   z-index: 0;
   width: 0.1rem;
   height: 1.3rem;
-  background: #aadafa;
+  background: #f6fef8;
   content: '';
 }
 .article-sort-item {
@@ -3080,7 +3111,7 @@ blockquote footer cite:before {
   left: calc(-1rem - 17px);
   width: 0.3rem;
   height: 0.3rem;
-  border: 0.15rem solid #49b1f5;
+  border: 0.15rem solid #9fefaf;
   border-radius: 0.3rem;
   background: #fff;
   content: '';
@@ -3120,7 +3151,7 @@ blockquote footer cite:before {
   font-size: 1rem;
 }
 .article-sort-item.year:hover:before {
-  border-color: #49b1f5;
+  border-color: #9fefaf;
 }
 .article-sort-item.year:before {
   top: 0.7rem;
@@ -3144,7 +3175,7 @@ blockquote footer cite:before {
   -webkit-box-orient: vertical;
 }
 .article-sort-item__title:hover {
-  color: #49b1f5 !important;
+  color: #9fefaf !important;
   -webkit-transform: translateX(20px);
   -moz-transform: translateX(20px);
   -o-transform: translateX(20px);
@@ -3291,7 +3322,7 @@ blockquote footer cite:before {
   cursor: pointer;
 }
 #pagination .page-number.current {
-  background: #00c4b6;
+  background: #9fefaf;
   color: #fff;
   cursor: default;
 }
@@ -3418,7 +3449,7 @@ blockquote footer cite:before {
 #article-container h4:hover:before,
 #article-container h5:hover:before,
 #article-container h6:hover:before {
-  color: #49b1f5;
+  color: #9fefaf;
 }
 #article-container h1 {
   padding-left: 1.4rem;
@@ -3534,7 +3565,7 @@ blockquote footer cite:before {
   position: absolute;
   top: 0;
   left: 0;
-  background: #49b1f5;
+  background: #9fefaf;
   color: #fff;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-out;
@@ -3562,7 +3593,7 @@ blockquote footer cite:before {
   margin-left: 0.45rem;
   width: 0.3rem;
   height: 0.3rem;
-  border: 0.15rem solid #49b1f5;
+  border: 0.15rem solid #9fefaf;
   border-radius: 0.3rem;
   background: transparent;
   content: '';
@@ -3580,7 +3611,7 @@ a {
   overflow-wrap: break-word;
 }
 a:hover {
-  color: #49b1f5;
+  color: #9fefaf;
 }
 a.fancybox {
   outline: none;
@@ -3692,9 +3723,9 @@ img {
   margin: 0.4rem 0.4rem 0.4rem 0;
   padding: 0 0.6rem;
   width: fit-content;
-  border: 1px solid #49b1f5;
+  border: 1px solid #9fefaf;
   border-radius: 0.6rem;
-  color: #49b1f5;
+  color: #9fefaf;
   font-size: 12px;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
@@ -3704,7 +3735,7 @@ img {
   transition: all 0.2s ease-in-out;
 }
 .layout_post .tag_share .post-meta__tags:hover {
-  background: #49b1f5;
+  background: #9fefaf;
   color: #fff;
 }
 .layout_post .tag_share .post_share {
@@ -3741,7 +3772,7 @@ img {
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 0.8rem;
-  background: #49b1f5;
+  background: #9fefaf;
   content: '';
 }
 .layout_post .post-copyright:after {
@@ -3759,7 +3790,7 @@ img {
   box-shadow: 0 0 8px 0 rgba(232,237,250,0.6), 0 2px 4px 0 rgba(232,237,250,0.5);
 }
 .layout_post .post-copyright .post-copyright-meta {
-  color: #49b1f5;
+  color: #9fefaf;
   font-weight: bold;
 }
 .layout_post .post-copyright .post-copyright-info {
@@ -3773,7 +3804,7 @@ img {
   text-decoration: none;
 }
 #article-container a {
-  color: #49b1f5;
+  color: #99a9bf;
 }
 #article-container a:hover {
   text-decoration: underline;
@@ -3895,7 +3926,7 @@ img {
   z-index: 1;
   display: inline-block;
   width: 100px;
-  background: #49b1f5;
+  background: #9fefaf;
   color: #fff;
   text-align: center;
   line-height: 36px;
@@ -4009,7 +4040,7 @@ img {
   margin-bottom: 2px;
   width: 30px;
   height: 30px;
-  background-color: #49b1f5;
+  background-color: #9fefaf;
   color: #fff;
   text-align: center;
   font-size: 16px;
@@ -4208,15 +4239,15 @@ img {
   transition: all 0.2s ease-in-out;
 }
 #sidebar .sidebar-toc .toc-link.active {
-  border-right-color: #009d92;
-  background: #00c4b6;
+  border-right-color: #5be476;
+  background: #9fefaf;
   color: #fff;
 }
 #sidebar .sidebar-toc__progress {
   position: relative;
   margin-bottom: 0.3rem;
   padding-left: 0.6rem;
-  color: #00c4b6;
+  color: #9fefaf;
 }
 #sidebar .sidebar-toc__progress .progress-notice {
   margin-right: 0.4rem;
@@ -4228,7 +4259,7 @@ img {
 #sidebar .sidebar-toc__progress-bar {
   width: 0;
   height: 1px;
-  background: #00c4b6;
+  background: #9fefaf;
 }
 @media screen and (max-width: 1024px) {
   i#toggle-sidebar {
@@ -4251,6 +4282,54 @@ img {
   #sidebar .toc-child {
     display: block !important;
   }
+}
+#vcomment button {
+  padding: 0.3rem 0.8rem;
+  border-color: #fff;
+  background-color: #9fefaf;
+  color: #fff;
+  font-size: 0.7rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#vcomment button:hover {
+  background-color: #ff7242;
+}
+#vcomment textarea {
+  background: url("https://i.loli.net/2020/05/11/aMS68vVAUWgcPbm.png") 100% 100% no-repeat;
+}
+#vcomment .vimg {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#vcomment .vimg:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+#vcomment .vat {
+  padding: 0 0.8rem;
+  border: 1px solid #9fefaf;
+  border-radius: 5px;
+  color: #9fefaf;
+  font-size: 0.7125rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#vcomment .vat:hover {
+  background-color: #9fefaf;
+  color: #fff;
 }
 #article-container .aplayer ol,
 #article-container .aplayer ul {
@@ -4482,7 +4561,7 @@ figure.gallery-group .gallery-group-name:after {
   z-index: 1;
   display: inline-block;
   padding: 0 1rem;
-  background: #49b1f5;
+  background: #9fefaf;
   color: #fff !important;
   text-align: center;
   cursor: pointer;
@@ -4874,6 +4953,16 @@ figure.gallery-group .gallery-group-name:after {
 [data-theme='dark'] .mermaid {
   filter: brightness(0.7);
 }
+[data-theme='dark'] #vcomment .vbtn,
+[data-theme='dark'] #vcomment .vat {
+  border: 1px solid rgba(255,255,255,0.6);
+  background: #121212 !important;
+  color: rgba(255,255,255,0.6) !important;
+}
+[data-theme='dark'] #vcomment .vbtn:hover,
+[data-theme='dark'] #vcomment .vat:hover {
+  background: #454545 !important;
+}
 [data-theme='dark'] #local-search {
   background: #121212;
 }
@@ -5073,11 +5162,11 @@ figure.gallery-group .gallery-group-name:after {
   transition: color 0.2s ease-in-out;
 }
 .search-dialog span.search-close-button:hover {
-  color: #49b1f5;
+  color: #9fefaf;
 }
 .search-dialog__title {
   padding: 0 0 0.7rem;
-  color: #49b1f5;
+  color: #9fefaf;
   font-size: 1rem;
   line-height: 1;
 }
@@ -5120,7 +5209,7 @@ figure.gallery-group .gallery-group-name:after {
   padding: 0.25rem 0.7rem;
   width: 100%;
   outline: none;
-  border: 2px solid #49b1f5;
+  border: 2px solid #9fefaf;
   border-radius: 2rem;
   background: #f6f8fa;
   font-size: 14px;
@@ -5140,7 +5229,7 @@ figure.gallery-group .gallery-group-name:after {
   left: 0;
   width: 0.3rem;
   height: 0.3rem;
-  border: 0.15rem solid #49b1f5;
+  border: 0.15rem solid #9fefaf;
   border-radius: 0.3rem;
   background: transparent;
   content: '';
@@ -5159,7 +5248,7 @@ figure.gallery-group .gallery-group-name:after {
   cursor: pointer;
 }
 #local-search .local-search__hit-item a:hover {
-  color: #49b1f5;
+  color: #9fefaf;
 }
 #local-search .local-search__hit-item .search-result {
   margin: 0 0 0.4rem;
